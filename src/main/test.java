@@ -42,7 +42,7 @@ public class test extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBackground(Color.RED);
+		panel.setBackground(Color.GRAY);
 		panel.setBounds(156, 75, 78, 71);
 		contentPane.add(panel);
 	}
