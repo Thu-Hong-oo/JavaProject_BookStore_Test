@@ -1,7 +1,13 @@
 package main;
 
+import form.BanHangForm;
+import form.CapNhatKhachHang;
+import form.CapNhatNVForm;
+
+import form.CapNhatSanPhamForm;
 //import component.DefaultForm;
 import form.DatHangForm;
+import form.DoanhThuForm;
 import form.GioiThieuForm;
 import form.HoaDonForm;
 import form.HomeForm;
@@ -9,14 +15,21 @@ import form.KhachHangForm;
 import form.LapHoaDonForm;
 import form.NCCForm;
 import form.NXBForm;
+import form.NhaCungCapForm;
 import form.NhanVienForm;
-import form.SachForm;
-import form.SanPhamForm;
+
 import form.TKDoanhThuForm;
 import form.TKKhachHangForm;
 import form.TKSachForm;
+import form.TaoKhuyenMaiForm;
+import form.ThongKeKhachHang;
+import form.ThongKeSanPhamForm;
+import form.TimKiemNhanVienForm;
+import form.TimKiemSanPhamForm;
 import form.TroGiupForm;
 import form.VPP_QLNForm;
+import form.XemDanhSachKM;
+import form.XemHoaDonForm;
 import menu.MenuEvent;
 
 import java.awt.Component;
@@ -56,48 +69,53 @@ public class Main extends javax.swing.JFrame {
 						dispose();
 						LoginForm login = new LoginForm();
 						login.setVisible(true);
-						
 					}
 					else if (subIndex == 4)
 						System.exit(0);
 					break;
+					
+				case 1:
+					if (subIndex == 1)
+						showForm(new CapNhatNVForm());
+					else if (subIndex == 2)
+						showForm(new TimKiemNhanVienForm());
+					else if (subIndex == 3)
+						showForm(new BanHangForm());
+					break;
 				case 2:
 					if (subIndex == 1)
-						showForm(new NCCForm());
+						showForm(new CapNhatKhachHang());
 					else if (subIndex == 2)
-						showForm(new KhachHangForm());
+						showForm(new TKKhachHangForm());
 					else if (subIndex == 3)
-						showForm(new NhanVienForm());
-					else if (subIndex == 4)
-						showForm(new HoaDonForm());
+						showForm(new ThongKeKhachHang());
+				
 					break;
 				case 3:
 					if (subIndex == 1)
-						showForm(new SanPhamForm());
+						showForm(new CapNhatSanPhamForm());
 					else if (subIndex == 2)
-						showForm(new LapHoaDonForm());
+						showForm(new TimKiemSanPhamForm());
+					else if (subIndex == 3)
+						showForm(new NhaCungCapForm());
+					else if (subIndex == 4)
+						showForm(new ThongKeSanPhamForm());
 					break;
 				case 4:
-
+					if (subIndex == 1)
+						showForm(new TaoKhuyenMaiForm());
+					else if (subIndex == 2)
+						showForm(new XemDanhSachKM());
 					break;
+				
 				case 5:
 					if (subIndex == 1)
-						showForm(new DatHangForm());
+						showForm(new XemHoaDonForm());
 					else if (subIndex == 2)
-						showForm(new TKSachForm());
-					else if (subIndex == 3)
-						showForm(new TKDoanhThuForm());
+						showForm(new DoanhThuForm());
+				
 					break;
 
-				case 6:
-					if (subIndex == 1)
-						showForm(new TroGiupForm());
-					else if (subIndex == 2) {
-						dispose();
-						LoginForm login = new LoginForm();
-						login.setVisible(true);
-
-					}
 				default:
 
 				}

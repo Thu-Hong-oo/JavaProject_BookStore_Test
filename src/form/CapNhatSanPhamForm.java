@@ -1,18 +1,18 @@
 package form;
 
 import java.awt.Color;
-
-import javax.swing.JPanel;
-import javax.swing.JTabbedPane;
-import javax.swing.JTable;
-import javax.swing.ScrollPaneConstants;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
 import java.awt.Font;
 
-public class SanPhamForm extends JPanel {
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.table.DefaultTableModel;
+
+public class CapNhatSanPhamForm extends JPanel {
 	private JTable tableSach;
 	private DefaultTableModel modelSach;
 	private JTable tableVPP;
@@ -21,7 +21,7 @@ public class SanPhamForm extends JPanel {
 	/**
 	 * Create the panel.
 	 */
-	public SanPhamForm() {
+	public CapNhatSanPhamForm() {
 		setBackground(Color.WHITE);
 		setLayout(null);
 		setSize(1100, 610);
@@ -69,4 +69,5 @@ public class SanPhamForm extends JPanel {
 		panelVPP.setBackground(new Color(255, 255, 255));
 		tabbedPane.addTab("Văn phòng phẩm & Quà lưu niệm", null, panelVPP, null);
 	}
+
 }
