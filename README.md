@@ -1,2 +1,5 @@
-# java-dropdown-menu
-![dropdown menu](https://user-images.githubusercontent.com/58245926/224536368-777a7057-dd50-4f72-a6ed-1c0b96b288ff.gif)
+# Java Swing BOOKSTORE
+
+![image](https://github.com/Thu-Hong-oo/JavaProject_BookStore/assets/122138253/2ba3b8f3-586d-4d55-9954-60a429d9de56)
+
+
